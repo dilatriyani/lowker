@@ -7,6 +7,7 @@ use App\Models\Lowker;
 use App\Models\Waktu_K;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 
@@ -15,22 +16,42 @@ class LowkerController extends Controller
     public function index()
     {
         //get Lowkers
-        $lowkers = Lowker::latest()->paginate(5);
+        $lowkers = [
+           "Lowker" => Lowker::get(),
+           "categories" => Category::all(),
+           "waktu__k_s" => Waktu_K::all(),
+           "lokasis" => Lokasi::all()
+
+        ];
         //render view with Lowkers
-        return view('admin.lowker.index', compact('lowkers'));
+        return view('admin.lowker.index', $lowkers );
     }
     public function create()
     {
-        $lokasi = lokasi::all(); 
-        $kerja = waktu_k::all();
-        $lulusan = category::all();
-        return view('admin.lowker.create', compact('lokasi', 'kerja', 'lulusan'));
+        // $lokasi =  DB::table('lokasis')->get(); 
+        // $waktu_k = DB::table('waktu__k_s')->get();
+        // $category = DB::table('categories')->get();
+        // return view('admin.lowker.create', compact('lokasi', 'waktu_k', 'category'));
+        return view('admin.lowker.create');
     }
     public function store(Request $request)
     {
         //validate form
+        // echo $request->image;
+        // echo $request->perusahaan;
+        // echo $request->posisi_loker;
+        // echo $request->email;
+        // echo $request->alamat;
+        // echo $request->kota;
+        // echo $request->lulusan;
+        // echo $request->waktu_k;
+        // echo $request->telp;
+        // echo $request->deskripsi;
+
+        // die();
+
         $this->validate($request, [
-            'image'     => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image'     => 'required|image|mimes:jpeg,png,sjpg,gif,svg|max:2048',
             'perusahaan'     => 'required',
             'posisi_loker'     => 'required',
             'email'     => 'required',
@@ -57,7 +78,7 @@ class LowkerController extends Controller
             'kota'     => $request->kota,
             'lulusan'     => $request->lulusan,
             'waktu_k'     => $request->waktu_k,
-            'telp'     => $request->telp,
+            'telp'     =>  $request->telp,
             'deskripsi'     => $request->deskripsi,
             
         ]);

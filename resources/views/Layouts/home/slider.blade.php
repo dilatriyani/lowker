@@ -15,13 +15,13 @@
                             </span>
                             <h2>
                               <span>
-                                 Jobstreet slusinya!!!
+                                 Jogja lowker solusinya!!!
                               </span>
                             </h2>
                          </h1>
                          
                          <p>
-                            Cari kerja gaperlu ribet, karna jobstreet merupakan portal pencari kerja yang mudah dan aman.
+                            Cari kerja gaperlu ribet, karna jogja lowker merupakan portal pencari kerja yang mudah dan aman.
                          </p>
                          <div class="btn-box">
                             <a href="" class="btn1">

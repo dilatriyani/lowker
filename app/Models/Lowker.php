@@ -8,22 +8,33 @@ use Illuminate\Database\Eloquent\Model;
 class Lowker extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'image',
-        'perusahaan',
-        'email',
-        'posisi_loker',
-        'alamat',
-        'kota',
-        'lulusan',
-        'waktu_k',
-        'telp',
-        'deskripsi',
-    ];
+    protected $guarded = [''];
+    // protected $fillable = [
+    //     'image',
+    //     'perusahaan',
+    //     'email',
+    //     'posisi_loker',
+    //     'alamat',
+    //     'kota',
+    //     'lulusan',
+    //     'waktu_k',
+    //     'telp',
+    //     'deskripsi',
+    // ];
 
-    public function Lowker()
+    public function kota()
     {
 
-        return $this->hasMany(Lowker::class);
+        return $this->belongsTo(Lokasi::class, "kota");
+    }
+    public function lulusan()
+    {
+
+        return $this->belongsTo(Category::class,"lulusan");
+    }
+    public function waktu_k()
+    {
+
+        return $this->belongsTo(Waktu_K::class,"waktu_k");
     }
 }

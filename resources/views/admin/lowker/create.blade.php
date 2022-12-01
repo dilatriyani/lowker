@@ -79,36 +79,46 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Kota</label>
                                 <select class="form-control form-select form-select-sm"
-                                            aria-label=".form-select-sm example"required="">
+                                            aria-label=".form-select-sm example"required="" name="lokasi" id="lokasi">
                                             <option selected>Pilih kota </option>
-                                            @foreach ($lokasi as $kota)
-                                                <option value="{{ $kota->category_name }}">
+                                            <option value="">Bantul</option>
+                                            <option value="">Sleman</option>
+                                            <option value="">Yogyakarta</option>
+                                            {{-- @foreach ($lokasi as $kota)
+                                                <option value="{{ $kota->id }}">
                                                     {{ $kota->category_name }}</option>
-                                            @endforeach
+                                            @endforeach --}}
                                 </select>
                             </div>
 
                             <div class="form-group">
                                 <label class="font-weight-bold">Waktu Kerja</label>
                                 <select class="form-control form-select form-select-sm"
-                                            aria-label=".form-select-sm example"required="">
+                                            aria-label=".form-select-sm example"required="" name="waktu_k" id="waktu_k">
                                             <option selected>Pilih waktu kerja</option>
-                                            @foreach ($kerja as $kerja)
-                                                <option value="{{ $kerja->category_name }}">
+                                            <option value="">Full Time</option>
+                                            <option value="">Part Time</option>
+                                            <option value="">Freelance</option>
+                                            {{-- @foreach ($waktu_k as $kerja)
+                                                <option value="{{ $kerja->id }}">
                                                     {{ $kerja->category_name }}</option>
-                                            @endforeach
+                                            @endforeach --}}
                                 </select>
                             </div>
 
                             <div class="form-group">
                                 <label class="font-weight-bold">Lulusan</label>
                                 <select class="form-control form-select form-select-sm"
-                                            aria-label=".form-select-sm example"required="">
+                                            aria-label=".form-select-sm example"required="" name="lulusan" id="lulusan">
                                             <option selected>Pilih lulusan pendidikan </option>
-                                            @foreach ($lulusan as $lulusan)
-                                                <option value="{{ $lulusan->category_name }}">
+                                            <option value="">SMP/Sederajat</option>
+                                            <option value="">SMA</option>
+                                            <option value="">D3</option>
+                                            <option value="">D4/S1</option>
+                                            {{-- @foreach ($category as $lulusan)
+                                                <option value="{{ $lulusan->id }}">
                                                     {{ $lulusan->category_name }}</option>
-                                            @endforeach
+                                            @endforeach --}}
                                 </select>
                             </div>
                             

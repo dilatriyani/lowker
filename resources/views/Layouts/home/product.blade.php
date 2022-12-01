@@ -34,104 +34,79 @@
                 </select>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="box">
-                    <div class="option_container">
-                        <div class="options">
-                            <a href="detail" class="option2">
-                                Lihat Detail
-                            </a>
+        <div class="card mt-5 mb-1" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ asset('images/p4.jpg') }}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body ">
+                        <div class="py-4">
+                            <h2 class="card-title">Barista/Cook Helper/Kasir</h5>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <i class="fa fa-building" aria-hidden="true"></i>
+                                        <span class="col-md-8">CV. Braxy</span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span class="col-md-8">Bantul</span>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                        <span>D3</span>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <i class='fa fa-money'></i>
+                                        <span>1,2 jt</span>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>full time</span>
+                                    </div>
+                                </div>
                         </div>
-                    </div>
-                    <div class="img-box">
-                        <img src="images/p1.jpg" alt="">
-                    </div>
-                    <h4 class="text-center"><b>Barista/Cook Helper/Kasir</b></h4>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <i class="fa fa-building" aria-hidden="true"></i>
-                            <span class="col-md-8">CV. Braxy</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span class="col-md-8">Bantul</span>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                            <span>D3</span>
-                        </div>
+                        <a href="detail" type="button" class="btn btn-info">Lihat Detail</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="box">
-                    <div class="option_container">
-                        <div class="options">
-                            <a href="detail" class="option2">
-                                Lihat Detail
-                            </a>
+        </div>
+
+        <div class="card mt-2 mb-2" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ asset('images/p2.jpg') }}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body ">
+                        <div class="py-4">
+                            <h2 class="card-title">Barista/Cook Helper/Kasir</h5>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <i class="fa fa-building" aria-hidden="true"></i>
+                                        <span class="col-md-8">CV. Braxy</span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span class="col-md-8">Bantul</span>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                        <span>D3</span>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <i class='fa fa-money'></i>
+                                        <span>1,2 jt</span>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>full time</span>
+                                    </div>
+                                </div>
                         </div>
-                    </div>
-                    <div class="img-box">
-                        <img src="images/p2.jpg" alt="">
-                    </div>
-                    <h4 class="text-center"><b>Barista/Cook Helper/Kasir</b></h4>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <i class="fa fa-building" aria-hidden="true"></i>
-                            <span class="col-md-8">CV. Braxy</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span class="col-md-8">Bantul</span>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                            <span>D3</span>
-                        </div>
+                        <a href="detail" type="button" class="btn btn-info">Lihat Detail</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="box">
-                    <div class="option_container">
-                        <div class="options">
-                            <a href="detail" class="option2">
-                                Lihat Detail
-                            </a>
-                        </div>
-                    </div>
-                    <div class="img-box">
-                        <img src="images/p3.jpg" alt="">
-                    </div>
-                    <h4 class="text-center"><b>Barista/Cook Helper/Kasir</b></h4>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <i class="fa fa-building" aria-hidden="true"></i>
-                            <span class="col-md-8">CV. Braxy</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span class="col-md-8">Bantul</span>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                            <span>D3</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-box">
-                <a href="loker">
-                    Lihat Semua Lowongan
-                </a>
             </div>
         </div>
       </div>

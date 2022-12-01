@@ -14,10 +14,7 @@
         <!-- partial -->
         <div class="main-panel">
           @include('admin.partials.body')
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
-          @include('admin.partials.footer')
-          <!-- partial -->
+         
         </div>
         <!-- main-panel ends -->
       </div>

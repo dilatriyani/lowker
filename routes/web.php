@@ -1,6 +1,4 @@
 <?php
-
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
@@ -40,13 +38,6 @@ Route::get('/loker',[LokerController::class, 'index']);
 Route::get('/detail',[LokerController::class, 'detail']);
 Route::get('/pasang_lowongan',[LokerController::class, 'lowongan']);
 
-
-// Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::get('/login', [LoginController::class, 'halamanLogin'])->name('login')->middleware('guest');
-// Route::post('/postLogin', [LoginController::class, 'postLogin'])->name('postLogin');
-// Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/dashboard', [AdminController::class, 'index']);
 // Route::get('/redirect',[AdminController::class, 'redirect']);
 Route::get('/view_category',[CatelulusanController::class, 'view_category']);
@@ -63,3 +54,7 @@ Route::get('/delete_catekerja/{id}',[CatekerjaController::class, 'destroy']);
 
 Route::resource('/lowker', LowkerController::class);
 Route::get('/lowker/{id}',[LowkerController::class, 'update']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
