@@ -1,6 +1,17 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-@section('content')
+        <title>Lowker Kerja</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+    </head>
+
+    <body>
+       @include('Layouts.home.header')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -70,4 +81,8 @@
         </div>
     </div>
 </div>
-@endsection
+
+    </body>
+</html>
+@extends('layouts.app')
+
