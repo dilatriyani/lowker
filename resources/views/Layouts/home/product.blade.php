@@ -34,6 +34,8 @@
                 </select>
             </div>
         </div>
+
+        <div class="card px-2 py-2 mt-2">
         <div class="card mt-5 mb-1" style="max-width: 100%;">
             <div class="row g-0">
                 <div class="col-md-4">
@@ -108,6 +110,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <a href="/loker" class="btn btn-info col-sm-4 mb-2">Lihat Semua Lowongan</a>
         </div>
       </div>
 </section>
