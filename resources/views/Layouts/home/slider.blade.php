@@ -11,7 +11,7 @@
                       <div class="detail-box">
                          <h1>
                             <span>
-                            Bingun mau cari kerja?
+                            Bingung mau cari kerja?
                             </span>
                             <h2>
                               <span>
@@ -19,7 +19,7 @@
                               </span>
                             </h2>
                          </h1>
-                         
+
                          <p>
                             Cari kerja gaperlu ribet, karna jogja lowker merupakan portal pencari kerja yang mudah dan aman.
                          </p>
