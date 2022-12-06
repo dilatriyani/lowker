@@ -6,7 +6,7 @@
       </a>
     </div>
     <ul class="nav">
-    
+
       <li class="nav-item menu-items">
         <a class="nav-link" href="/dashboard">
           <span class="menu-icon">
@@ -42,7 +42,7 @@
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="{{url('lowkers')}}">Data lowker</a></li>
-            
+
           </ul>
         </div>
       </li> --}}
