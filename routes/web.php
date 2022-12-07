@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
@@ -12,7 +13,11 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Home\KebijakanController;
 use App\Http\Controllers\Admin\CatekerjaController;
 use App\Http\Controllers\Admin\CatelokasiController;
+use App\Http\Controllers\admin\SliderHomeController;
 use App\Http\Controllers\Admin\CatelulusanController;
+use App\Http\Controllers\admin\PasanglokerController;
+use App\Http\Controllers\admin\SliderMitraController;
+use App\Http\Controllers\Admin\KebijakanUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,6 +60,24 @@ Route::get('/delete_catekerja/{id}',[CatekerjaController::class, 'destroy']);
 Route::resource('/lowker', LowkerController::class);
 Route::get('/lowker/{id}',[LowkerController::class, 'update']);
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/admin/Home/slider_home/edit', [SliderHomeController::class, "edit"]);
+Route::put('/slider_home/simpan', [SliderHomeController::class, "update"]);
+Route::resource("/slider_home", SliderHomeController::class);
+
+// slider mitra
+Route::get('/slider_mitra/edit', [SliderMitraController::class, "edit"]);
+Route::put('/slider_mitra/simpan', [SliderMitraController::class, "update"]);
+Route::resource("/slider_mitra", SliderMitraController::class);
+
+// route kebijakan 
+Route::get('/kebijakanuser/edit', [KebijakanUserController::class, "edit"]);
+Route::put('/kebijakanuser/simpan', [KebijakanUserController::class, "update"]);
+Route::resource("/kebijakanuser", KebijakanUserController::class);
+
+// pasang loker
+Route::get('/pasangloker/edit', [PasanglokerController::class, "edit"]);
+Route::put('/pasangloker/simpan', [PasanglokerController::class, "update"]);
+Route::resource("/pasangloker", PasanglokerController::class);
