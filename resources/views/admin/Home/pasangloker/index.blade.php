@@ -62,9 +62,9 @@
                                                                 </button>
                                                             </form>
                                                         </div>
-                    
+
                                                     </div>
-                    
+
                                                 </td>
                                             </tr>
                                             @endforeach
@@ -101,11 +101,11 @@
                             <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         </div>
-    
+
                         <div class="form-group">
                             <label>Deskripsi</label>
-                            <textarea name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror"
-                            value="{{ old('deskripsi') }}" id="create" >
+                            <textarea type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror"
+                            value="{{ old('deskripsi') }}" placeholder="Masukan deskripsi" id="create">
                             </textarea>
                             @error('deskripsi')
                             <div class="alert alert-danger">{{ $message }}</div>
@@ -116,7 +116,7 @@
                             <label for="image"> Gambar </label>
                             <input type="file" class="form-control" name="image" id="image">
                         </div>
-    
+
                     </div>
                     <div class="modal-footer d-md-block">
                         <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
@@ -141,7 +141,7 @@
                     @method("PUT")
                     @csrf
                     <div class="modal-body" id="modal-content-edit">
-    
+
                     </div>
                     <div class="modal-footer d-md-block">
                         <button type="submit" class="btn btn-success btn-sm">Simpan</button>
@@ -157,6 +157,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 @section('js')
+
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script type="text/javascript">
     function previewImage() {
@@ -188,11 +189,9 @@
     }
 
 </script>
+
 <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
 <script>
-    CKEDITOR.replace('deskripsi');
+    CKEDITOR.replace('create');
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-@endsection
-
 </html>

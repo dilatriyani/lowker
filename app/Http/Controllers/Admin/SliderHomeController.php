@@ -19,11 +19,12 @@ class SliderHomeController extends Controller
 
     public function store(Request $request)
     {
-        // $this->validate($request, [
-        //     'judul' => '',
-        //     'deskripsi' => '',
-        //     'image' => 'mimes:jpg,jpeg,png'
-        // ]);
+        $this->validate($request, [
+            'judul' => '',
+            'deskripsi' => '',
+            'heading' => ''
+        ]);
+
         SliderHome::create([
             'judul' => $request->judul,
             'heading' => $request->heading,
@@ -43,19 +44,17 @@ class SliderHomeController extends Controller
 
     public function update(Request $request)
     {
-        // $this->validate($request, [
-        //     'judul' => '',
-        //     'deskripsi' => '',
-        //     'image' => 'mimes:jpg,jpeg,png'
-        // ]);
-
-       
+        $this->validate($request, [
+            'judul' => '',
+            'deskripsi' => '',
+            'heading' => ''
+        ]);
 
         Sliderhome::where("id", $request->id)->update([
             'judul' => $request->judul,
             'heading' => $request->heading,
             'deskripsi' => $request->deskripsi,
-            
+
         ]);
 
         return back();
@@ -63,7 +62,7 @@ class SliderHomeController extends Controller
     public function destroy(SliderHome $slider_home)
     {
         //delete image
-     
+
         //delete post
         $slider_home->delete();
 

@@ -23,7 +23,7 @@ class KebijakanUserController extends Controller
             'judul' => '',
             'heading' => '',
             'deskripsi' => '',
-           
+
         ]);
         Kebijakan::create([
             'judul' => $request->judul,
@@ -36,10 +36,10 @@ class KebijakanUserController extends Controller
     public function edit(Request $request)
     {
         $data = [
-            "edit" => SliderHome::where("id", $request->id)->first()
+            "edit" => Kebijakan::where("id", $request->id)->first()
         ];
 
-        return view("admin.Home.kebijakan.edit", $data);
+        return view("admin.Home.kebijakanuser.edit", $data);
     }
 
     public function update(Request $request)
@@ -48,16 +48,16 @@ class KebijakanUserController extends Controller
             'judul' => '',
              'heading' => '',
             'deskripsi' => '',
-            
+
         ]);
 
-       
 
-        Sliderhome::where("id", $request->id)->update([
+
+        Kebijakan::where("id", $request->id)->update([
             'judul' => $request->judul,
             'heading' => $request->heading,
             'deskripsi' => $request->deskripsi,
-            
+
         ]);
 
         return back();

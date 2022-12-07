@@ -11,7 +11,7 @@
 <div class="form-group">
     <label>Deskripsi</label>
     <textarea name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror"
-    value="{{ old('deskripsi') }}" id="edit" >{{ $edit->deskripsi }}
+    value="{{ old('deskripsi') }}" id="deskripsi" >{{ $edit->deskripsi }}
     </textarea>
     @error('deskripsi')
     <div class="alert alert-danger">{{ $message }}</div>
