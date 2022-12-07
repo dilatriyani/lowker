@@ -19,23 +19,22 @@ class PasanglokerController extends Controller
     }
     public function store(Request $request)
     {
-        // $this->validate($request, [
-        //     'judul' => '',
-        //     'deskripsi' => '',
-        //     'image' => 'mimes:jpg,jpeg,png'
-        // ]);
-              //upload image
-        $image = $request->file('image');
-        $image->storeAs('public/lowker', $image->hashName());
-        // if($request->file("image")) {
-        //     $data = $request->file("image")->store("sliderhome");
-        // }
+        $this->validate($request, [
+            'judul' => '',
+            'deskripsi' => '',
+            'image' => 'mimes:jpg,jpeg,png'
+        ]);
+
+        if($request->file("image")) {
+            $data = $request->file("image")->store("pasangloker");
+        }
 
         pasangloker::create([
-            'image'     => $image->hashName(),
+            'image'     => $data,
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
         ]);
+
         return back()->with('berhasil', 'Data baru telah ditambahkan!');
     }
     public function edit(Request $request)
@@ -55,37 +54,29 @@ class PasanglokerController extends Controller
             'image' => 'mimes:jpg,jpeg,png'
         ]);
 
-        if ($request->hasFile('image')) {
+        if($request->file("image_new")) {
+            if($request->gambarLama) {
+                Storage::delete($request->gambarLama);
+            }
 
-            //upload new image
-            $image = $request->file('image');
-            $image->storeAs('public/lowker/', $image->hashName());
+            $data = $request->file("image_new")->store("pasangloker");
+        } else {
+            $data = $request->gambarLama;
+        }
 
-            //delete old image
-            Storage::delete('public/lowker/'.$data->image);
-        }else{
-
-            pasangloker::where("id", $request->id)->update([
+        pasangloker::where("id", $request->id)->update([
+            'gambar' => $data,
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
-
         ]);
-    }
 
         return back();
-
-      }
+     }
 
     public function destroy(pasangloker $pasangloker)
     {
-        //delete image
-        Storage::delete('public/lowker/'. $pasangloker->image);
-
-        //delete post
         $pasangloker->delete();
-
-        //redirect to index
-        return back()->with('Berhasil dihapus!');
+       return back()->with('berhasil');
     }
 
 }
