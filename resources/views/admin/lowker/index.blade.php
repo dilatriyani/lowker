@@ -23,7 +23,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">DATA LOWONGAN PEKERJAAN</h4>
-                    <a href="#" class="btn btn-thema"data-bs-toggle="modal" data-bs-target="#exampleModalTambah" class="btn btn-primary fw-bold rounded-pill px-4 shadow float-end">Tambah</a>
+                                    <a href="#" class="btn btn-thema"data-bs-toggle="modal" data-bs-target="#exampleModalTambah" class="btn btn-primary fw-bold rounded-pill px-4 shadow float-end">Tambah</a>
 
                                 <div class="table-responsive">
                                     <table class="table table-striped">
