@@ -61,5 +61,7 @@
           </span>
           <span class="menu-title">Tables</span>
         </a>
+      </li>
+
     </ul>
   </nav>

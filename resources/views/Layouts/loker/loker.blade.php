@@ -4,11 +4,12 @@
     <div class="container">
         <div class="heading_container heading_center">
             <h2>
-                Cari Pekerjaan yang Anda butuhkan
+                JOB FAIR EVERYDAY
+                <p class="lead">Jangan lupa untuk bergabung juga dengan ratusan ribu komunitas job seeker di sosial media Jogjalowker.</p>
             </h2>
         </div>
         <div class="row mt-4">
-            <div class="col-md-4">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Lulusan</option>
                     <option value="1">SMP</option>
@@ -18,7 +19,7 @@
                     <option value="3">S2</option>
                 </select>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Lokasi</option>
                     <option value="1">Yogyakarta</option>
@@ -27,7 +28,7 @@
                     <option value="3">Sleman</option>
                 </select>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Waktu kerja</option>
                     <option value="1">Full Time</option>
@@ -35,6 +36,9 @@
                     <option value="3">Freelance</option>
                 </select>
             </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <button class="btn btn-success btn-block">Cari Lowongan</button>
+            </div><!-- end col -->
         </div>
 
         <div class="card py-3 px-3 mt-4">
@@ -70,7 +74,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="detail" type="button" class="btn btn-info">Lihat Detail</a>
+                            <a href="detail" type="button" class="btn btn-success">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +112,7 @@
                                         </div>
                                     </div>
                             </div>
-                            <a href="detail" type="button" class="btn btn-info">Lihat Detail</a>
+                            <a href="detail" type="button" class="btn btn-success">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
@@ -146,7 +150,7 @@
                                         </div>
                                     </div>
                             </div>
-                            <a href="detail" type="button" class="btn btn-info">Lihat Detail</a>
+                            <a href="detail" type="button" class="btn btn-success">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +188,7 @@
                                         </div>
                                     </div>
                             </div>
-                            <a href="detail" type="button" class="btn btn-info">Lihat Detail</a>
+                            <a href="detail" type="button" class="btn btn-success">Lihat Detail</a>
                         </div>
                     </div>
                 </div>

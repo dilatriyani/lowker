@@ -38,7 +38,7 @@
       <!-- footer start -->
       @include('Layouts.home.footer')
       <!-- footer end -->
-     
+
       <!-- jQery -->
       <script src="{{asset('home/js/jquery-3.4.1.min.js')}}"></script>
       <!-- popper js -->
