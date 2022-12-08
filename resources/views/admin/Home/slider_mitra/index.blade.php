@@ -24,7 +24,7 @@
                         </div>
                     @endif
                     <div class="col-lg-12 grid-margin stretch-card">
-                        <div class="card">
+                        <div class="card " style="background-color: rgb(62, 62, 62)">
                             <div class="card-body">
                                 <h4 class="card-title">DATA SLIDER MITRA</h4>
                                 <a href="" class="btn btn-md btn-success mb-3" data-bs-toggle="modal" data-bs-target="#ModalTambah">Tambah
@@ -81,7 +81,7 @@
 
     {{-- Modal Tambah data  --}}
     <div class="modal fade" id="ModalTambah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" style="width: 50%">
+        <div class="modal-dialog modal-lg" style="width: 50%; background-color: rgb(73, 73, 73)">
             <div class="modal-content">
                 <div class="modal-header hader">
                     <h3 class="modal-title" id="exampleModalLabel">
@@ -127,7 +127,7 @@
 
     {{-- modal edit data  --}}
     <div class="modal fade" id="ModalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" style="width: 50%">
+        <div class="modal-dialog modal-lg" style="width: 50%;background-color: rgb(73, 73, 73)">
             <div class="modal-content">
                 <div class="modal-header hader">
                     <h3 class="modal-title" id="exampleModalLabel">

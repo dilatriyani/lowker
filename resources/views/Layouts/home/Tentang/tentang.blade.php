@@ -23,17 +23,9 @@
          <div class="carousel-inner">
             <div class="carousel-item active">
                <div class="box col-lg-10 mx-auto">
-                  <div class="img_container">
-                     <div class="img-box">
-                        <div class="img_box-inner">
-                        {{-- gambar Logo Jobtreet --}}
-                           <img src="images/client.jpg" alt="">
-                        </div>
-                     </div>
-                  </div>
                   <div class="detail-box">
                      <h5>
-                        Apa itu Jobtreet?
+                        Apa itu Jogja Lowker?
                      </h5>
                      <p>
                         Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
@@ -43,16 +35,9 @@
             </div>
             <div class="carousel-item">
                <div class="box col-lg-10 mx-auto">
-                  <div class="img_container">
-                     <div class="img-box">
-                        <div class="img_box-inner">
-                           <img src="images/client.jpg" alt="">
-                        </div>
-                     </div>
-                  </div>
                   <div class="detail-box">
                      <h5>
-                        Mengapa harus Jobtreet?
+                        Mengapa harus Jogja Lowker?
                      </h5>
                      <p>
                         Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
@@ -62,16 +47,9 @@
             </div>
             <div class="carousel-item">
                <div class="box col-lg-10 mx-auto">
-                  <div class="img_container">
-                     <div class="img-box">
-                        <div class="img_box-inner">
-                           <img src="images/client.jpg" alt="">
-                        </div>
-                     </div>
-                  </div>
                   <div class="detail-box">
                      <h5>
-                        Apa kelebihanny?
+                        Apa kelebihannya?
                      </h5>
                      <p>
                         Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.

@@ -11,6 +11,11 @@ class AdminController extends Controller
     {
         return view('admin.home');
     }
+
+    public function data_user()
+    {
+        return view('admin.Data_User.data_user');
+    }
 // public function redirect()
 // {
 //     $user=Auth::user()->user;

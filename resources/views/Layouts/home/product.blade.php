@@ -35,8 +35,8 @@
             </div>
         </div>
 
-        <div class="card px-2 py-2 mt-2">
-        <div class="card mt-5 mb-1" style="max-width: 100%;">
+        <div class="card px-3 py-3 mt-4">
+        <div class="card mt-2 mb-2" style="max-width: 100%;">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="{{ asset('images/p4.jpg') }}" class="img-fluid rounded-start" alt="...">
@@ -74,14 +74,14 @@
             </div>
         </div>
 
-        <div class="card mt-2 mb-2" style="max-width: 100%;">
+        <div class="card mb-2" style="max-width: 100%;">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="{{ asset('images/p2.jpg') }}" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body ">
-                        <div class="py-4">
+                        <div class="mt-2 px-2">
                             <h2 class="card-title">Barista/Cook Helper/Kasir</h5>
                                 <div class="row">
                                     <div class="col-md-3">
@@ -111,7 +111,10 @@
                 </div>
             </div>
         </div>
-        <a href="/loker" class="btn btn-info col-sm-4 mb-2">Lihat Semua Lowongan</a>
+        <div class="text-center">
+            <a href="/loker" class="btn btn-info col-sm-4 mb-2 mt-3">Lihat Semua Lowongan</a>
+        </div>
+       
         </div>
       </div>
 </section>

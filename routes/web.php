@@ -44,6 +44,7 @@ Route::get('/detail',[LokerController::class, 'detail']);
 Route::get('/pasang_lowongan',[LokerController::class, 'lowongan']);
 
 Route::get('/dashboard', [AdminController::class, 'index']);
+Route::get('/data_user', [AdminController::class, 'data_user']);
 // Route::get('/redirect',[AdminController::class, 'redirect']);
 Route::get('/view_category',[CatelulusanController::class, 'view_category']);
 Route::POST('/add_category',[CatelulusanController::class, 'add_category']);
@@ -81,3 +82,4 @@ Route::resource("/kebijakanuser", KebijakanUserController::class);
 Route::get('/pasangloker/edit', [PasanglokerController::class, "edit"]);
 Route::put('/pasangloker/simpan', [PasanglokerController::class, "update"]);
 Route::resource("/pasangloker", PasanglokerController::class);
+
