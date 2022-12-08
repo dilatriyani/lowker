@@ -18,14 +18,14 @@ class Lowker extends Model
 
         return $this->belongsTo("App\Models\Lokasi", "jenis_lokasi", "id");
     }
-    public function getlulusan()
+    public function getpendidikan()
     {
 
-        return $this->belongsTo("App\Models\Catagory", "jenis_category", "id");
+        return $this->belongsTo("App\Models\Category", "jenis_category", "id");
     }
     public function getwaktu_k()
     {
 
-        return $this->belongsTo("App\Models\Waktu__K", "jenis_waktukerja", "id");
+        return $this->belongsTo("App\Models\Waktu_K", "jenis_waktukerja", "id");
     }
 }

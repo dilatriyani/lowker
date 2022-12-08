@@ -55,6 +55,7 @@ Route::get('/delete_catekerja/{id}',[CatekerjaController::class, 'destroy']);
 
 Route::resource('/lowker', LowkerController::class);
 Route::get('/lowker/{id}',[LowkerController::class, 'update']);
+Route::get('/delete_catelowker/{id}',[CatekerjaController::class, 'destroy']);
 
 Auth::routes();
 

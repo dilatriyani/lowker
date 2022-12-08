@@ -26,6 +26,7 @@ class LowkerController extends Controller
 
     public function store(Request $request)
     {
+        // dd($request->all());
         $this->validate($request, [
             'image'     => 'mimes:jpg,jpeg,png',
             'perusahaan'  => '',
@@ -111,10 +112,12 @@ class LowkerController extends Controller
        return back();
     }
 
-    public function destroy(Lowker $post)
+    public function destroy($id)
     {
-       $post->delete();
-       return back()->with('berhasil');
+        $data = Lowker::where("id", $id)->first();
+        $data->delete();
+
+        return back()->with('message','Category Deleted Successfully');
     }
 
 

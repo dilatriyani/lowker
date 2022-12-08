@@ -63,38 +63,20 @@
                                         <tbody>
                                             @foreach ($lowker as $low)
                                                 <tr>
-                                                    <td><img src="{{ url('/storage/' .$low->image) }}" style="width: 120px;"></td>
+                                                    <td><img src="{{ url('/storage/' .$low->image) }}" style="width:100%;" style="height:100%;"></td>
                                                     <td>{{ $low->perusahaan }}</td>
                                                     <td>{{ $low->posisi_loker }}</td>
                                                     <td>{{ $low->email }}</td>
                                                     <td>{{ $low->alamat }}</td>
                                                     <td>{{ $low->telp }}</td>
-                                                    <td>{{ $low->deskripsi }}</td>
-                                                    <td>{{ $low->lokasi->category_name }}</td>
-                                                    <td>{{ $low->categori->category_name }}</td>
-                                                    <td>{{ $low->waktu__k->category_name }}</td>
+                                                    <td>{!! $low->deskripsi !!}</td>
+                                                    <td>{{ $low->getkota->category_name }}</td>
+                                                    <td>{{ $low->getpendidikan->category_name }}</td>
+                                                    <td>{{ $low->getwaktu_k->category_name }}</td>
+                                                    <td >
+                                                        <a onclick="return confirm('Aru sure to Delete?')" href="{{url('/delete_catelowker',$low->id)}}" class="btn btn-danger">Delete</a>
+                                                    </td>
                                                 </tr>
-                                                <div class="row">
-                                                    <div class="col-md-4 text-end">
-                                                        <button onclick="edit" type="button" class="btnedit" data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
-                                                            <i class='bx bx-edit'></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-md-4 text-end">
-                                                        <button onclick="detail" type="button" class="btndetail" data-bs-toggle="modal" data-bs-target="#exampleModalDetail">
-                                                            <i class='bx bx-detail'></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-md-4 text-end">
-                                                        <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="" method="POST">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button class="btndelete" type="submit">
-                                                                <i class='bx bxs-trash'></i>
-                                                            </button>
-                                                        </form>
-                                                    </div>
-                                                </div>
                                             @endforeach
                                         </tbody>
                                     </table>
