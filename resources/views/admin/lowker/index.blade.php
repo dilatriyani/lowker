@@ -56,6 +56,7 @@
                                                 <th>Deskripsi</th>
                                                 <th>Lokasi</th>
                                                 <th>Jabatan</th>
+                                                <th>Gaji</th>
                                                 <th>Waktu</th>
                                                 <th>Aksi</th>
                                             </tr>
@@ -72,6 +73,7 @@
                                                     <td>{!! $low->deskripsi !!}</td>
                                                     <td>{{ $low->getkota->category_name }}</td>
                                                     <td>{{ $low->getpendidikan->category_name }}</td>
+                                                    <td>{{ $low->gaji }}</td>
                                                     <td>{{ $low->getwaktu_k->category_name }}</td>
                                                     <td >
                                                         <a onclick="return confirm('Aru sure to Delete?')" href="{{url('/delete_catelowker',$low->id)}}" class="btn btn-danger">Delete</a>
@@ -115,6 +117,15 @@
                                             <label>Posisi</label>
                                             <input type="text" name="posisi_loker" class="form-control @error('posisi_loker') is-invalid @enderror" placeholder="Posisi yang dibutuhkan" value="{{ old('posisi_loker') }}">
                                             @error('posisi_loker')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label>Gaji</label>
+                                            <input type="number" name="gaji" class="form-control @error('gaji') is-invalid @enderror" placeholder="Posisi yang dibutuhkan" value="{{ old('gaji') }}">
+                                            @error('gaji')
                                             <div class="alert alert-danger">{{ $message }}</div>
                                             @enderror
                                         </div>

@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('posisi_loker');
             $table->string('telp');
             $table->string('alamat');
+            $table->string('gaji');
             $table->text('deskripsi');
             $table->timestamps();
         });
