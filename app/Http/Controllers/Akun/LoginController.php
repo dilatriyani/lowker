@@ -33,8 +33,8 @@ class LoginController extends Controller
             } else {
                 Auth::attempt($req);
                 if ($user->id_role == 1) {
-                    return redirect("/admin/home");
-                } else if ($user->id_role == 0) {
+                    return redirect()->intended("/admin/home");
+                } else if ($user->id_role == 2) {
                     return redirect("/Layouts/index");
                 }
             }

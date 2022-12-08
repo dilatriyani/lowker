@@ -47,23 +47,28 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Logo</th>
-                                                <th>Perusahaan</th>
-                                                <th>Posisi</th>
-                                                <th>Email</th>
-                                                <th>Alamat</th>
-                                                <th>Telp</th>
-                                                <th>Deskripsi</th>
-                                                <th>Lokasi</th>
-                                                <th>Jabatan</th>
-                                                <th>Gaji</th>
-                                                <th>Waktu</th>
-                                                <th>Aksi</th>
+                                                <th style="text-align: center;">No</th>
+                                                <th style="text-align: center;">Logo</th>
+                                                <th style="text-align: center;">Perusahaan</th>
+                                                <th style="text-align: center;">Posisi</th>
+                                                <th style="text-align: center;">Email</th>
+                                                <th style="text-align: center;">Alamat</th>
+                                                <th style="text-align: center;">Telp</th>
+                                                <th style="text-align: center;">Deskripsi</th>
+                                                <th style="text-align: center;">Lokasi</th>
+                                                <th style="text-align: center;">Jabatan</th>
+                                                <th style="text-align: center;">Gaji</th>
+                                                <th style="text-align: center;">Waktu</th>
+                                                <th style="text-align: center;">Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @php
+                                                $no = 0;
+                                            @endphp
                                             @foreach ($lowker as $low)
                                                 <tr>
+                                                    <td>{{ ++$no }}</td>
                                                     <td><img src="{{ url('/storage/' .$low->image) }}" style="width:100%;" style="height:100%;"></td>
                                                     <td>{{ $low->perusahaan }}</td>
                                                     <td>{{ $low->posisi_loker }}</td>
@@ -76,7 +81,8 @@
                                                     <td>{{ $low->gaji }}</td>
                                                     <td>{{ $low->getwaktu_k->category_name }}</td>
                                                     <td >
-                                                        <a onclick="return confirm('Aru sure to Delete?')" href="{{url('/delete_catelowker',$low->id)}}" class="btn btn-danger">Delete</a>
+                                                       <button onclick="return confirm('Aru sure to Delete?')" href="{{url('/delete_catelowker',$low->id)}}" class="btn btn-danger"> <i class='bx bx-trash'></i></button>
+                                                       <button onclick="return confirm('Aru sure to Delete?')" href="{{url('/delete_catelowker',$low->id)}}" class="btn btn-info"> <i class='bx bx-edit'></i></button>
                                                     </td>
                                                 </tr>
                                             @endforeach
@@ -220,6 +226,7 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
 <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
 <script>
     CKEDITOR.replace('tambah');
