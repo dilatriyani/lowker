@@ -8,33 +8,24 @@ use Illuminate\Database\Eloquent\Model;
 class Lowker extends Model
 {
     use HasFactory;
+
+    protected $table = "lowkers";
+
     protected $guarded = [''];
-    // protected $fillable = [
-    //     'image',
-    //     'perusahaan',
-    //     'email',
-    //     'posisi_loker',
-    //     'alamat',
-    //     'kota',
-    //     'lulusan',
-    //     'waktu_k',
-    //     'telp',
-    //     'deskripsi',
-    // ];
 
-    public function kota()
+    public function getkota()
     {
 
-        return $this->belongsTo(Lokasi::class, "kota");
+        return $this->belongsTo("App\Models\Lokasi", "jenis_lokasi", "id");
     }
-    public function lulusan()
+    public function getpendidikan()
     {
 
-        return $this->belongsTo(Category::class,"lulusan");
+        return $this->belongsTo("App\Models\Category", "jenis_category", "id");
     }
-    public function waktu_k()
+    public function getwaktu_k()
     {
 
-        return $this->belongsTo(Waktu_K::class,"waktu_k");
+        return $this->belongsTo("App\Models\Waktu_K", "jenis_waktukerja", "id");
     }
 }

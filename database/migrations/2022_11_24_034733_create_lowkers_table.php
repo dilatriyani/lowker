@@ -15,15 +15,16 @@ return new class extends Migration
     {
         Schema::create('lowkers', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger("jenis_category");
+            $table->bigInteger("jenis_lokasi");
+            $table->bigInteger("jenis_waktukerja");
             $table->string('image');
             $table->string('perusahaan');
             $table->string('email');
             $table->string('posisi_loker');
-            $table->string('alamat');
-            $table->string('kota');
-            $table->string('lulusan');
-            $table->string('waktu_k');
             $table->string('telp');
+            $table->string('alamat');
+            $table->string('gaji');
             $table->text('deskripsi');
             $table->timestamps();
         });
