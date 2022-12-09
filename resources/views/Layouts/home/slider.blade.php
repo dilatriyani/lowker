@@ -11,7 +11,7 @@
                       <div class="detail-box">
                          <h1>
                             <span>
-                            Bingun mau cari kerja?
+                            Bingung mau cari kerja?
                             </span>
                             <h2>
                               <span>
@@ -19,7 +19,7 @@
                               </span>
                             </h2>
                          </h1>
-                         
+
                          <p>
                             Cari kerja gaperlu ribet, karna jogja lowker merupakan portal pencari kerja yang mudah dan aman.
                          </p>
@@ -56,31 +56,6 @@
                 </div>
              </div>
           </div>
-          {{-- <div class="carousel-item">
-             <div class="container ">
-                <div class="row">
-                   <div class="col-md-7 col-lg-6 ">
-                      <div class="detail-box">
-                         <h1>
-                            <span>
-                            Sale 20% Off
-                            </span>
-                            <br>
-                            On Everything
-                         </h1>
-                         <p>
-                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                         </p>
-                         <div class="btn-box">
-                            <a href="" class="btn1">
-                            Shop Now
-                            </a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div> --}}
        </div>
        <div class="container">
           <ol class="carousel-indicators">

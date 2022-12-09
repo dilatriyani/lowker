@@ -39,13 +39,12 @@
                 </div>
              </div>
                 </div>
-             </div>     
+             </div>
              <div class="col-md-5">
                 <div class="widget_menu">
                    <h3>Jobstreet</h3>
                    <div class="information_f">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    
+                     <p style="text-align: justify;">Jogjalowker merupakan portal informasi lowongan kerja online No 1 di Jogja. Sejak didirikan pada 17 Agustus 2015, Jogjalowker telah difollow up oleh ribuan Employers (perusahaan) dan ratusan ribu Job Seeker (pencari kerja) di DIY dan sekitarnya.</p>
                    </div>
                 </div>
              </div>
