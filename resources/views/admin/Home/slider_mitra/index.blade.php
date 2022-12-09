@@ -3,11 +3,26 @@
 
 <head>
     @include('admin.partials.css_script')
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-</head>
 
+    <style type="text/css">
+        .div_center {
+            text-align: center;
+            padding-top: 40px;
+
+        }
+
+        .h2_font {
+            font-size: 40px;
+            padding-bottom: 40px;
+        }
+
+        .input_color {
+            color: black
+        }
+
+
+    </style>
+</head>
 <body>
     <div class="container-scroller">
         <!-- partial:partials/_sidebar.html -->

@@ -20,7 +20,7 @@
             color: black
         }
 
-        
+
     </style>
 </head>
 
@@ -45,29 +45,34 @@
                             <div class="card px-3 py-3">
                             <h2 class="h2_font">Add category
                             </h2>
-    
+
                             <form action="{{ url('/add_catekerja') }}" method="POST">
                                 @csrf
                                 <div class="mb-3">
                                     <input type="text" name="category" placeholder="write category name">
-                                    
+
                                 </div>
                                 <input type="submit" class="btn btn-primary" name="submit" value="Add Category"></button>
-                                  
+
                             </form>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <table class="table">
                                 <thead>
-                                  <tr class="table-secondary">
+                                  <tr class="table-secondary" style="text-align: center;">
+                                    <td>No</td>
                                     <td class="col-md-9">Category Name</td>
                                     <td class="col-md-3">Action</td>
                                   </tr>
                                 </thead>
                                 <tbody>
+                                     @php
+                                        $no = 0;
+                                    @endphp
                                     @foreach ($data as $data)
-                                    <tr class="">
+                                    <tr style="text-align: center;">
+                                        <td>{{ ++$no }}</td>
                                         <td>{{$data->category_name}}</td>
                                         <td >
                                             <a onclick="return confirm('Aru sure to Delete?')" href="{{url('/delete_catekerja',$data->id)}}" class="btn btn-danger">Delete</a>
@@ -76,11 +81,11 @@
                                     @endforeach
                                 </tbody>
                               </table>
-                       
+
                         </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

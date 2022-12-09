@@ -2,8 +2,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Home\FormController;
+use App\Http\Controllers\Akun\LoginController;
 use App\Http\Controllers\Home\LokerController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Home\KontakController;
@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\CatekerjaController;
 use App\Http\Controllers\Admin\CatelokasiController;
 use App\Http\Controllers\admin\SliderHomeController;
 use App\Http\Controllers\Admin\CatelulusanController;
+use App\Http\Controllers\Admin\DataPekerjaController;
 use App\Http\Controllers\admin\PasanglokerController;
 use App\Http\Controllers\admin\SliderMitraController;
 use App\Http\Controllers\Admin\KebijakanUserController;
@@ -44,7 +45,7 @@ Route::get('/detail',[LokerController::class, 'detail']);
 Route::get('/pasang_lowongan',[LokerController::class, 'lowongan']);
 
 Route::get('/dashboard', [AdminController::class, 'index']);
-Route::get('/data_user', [AdminController::class, 'data_user']);
+Route::get('/data_user', [DataPekerjaController::class, 'index']);
 // Route::get('/redirect',[AdminController::class, 'redirect']);
 Route::get('/view_category',[CatelulusanController::class, 'view_category']);
 Route::POST('/add_category',[CatelulusanController::class, 'add_category']);
@@ -73,7 +74,7 @@ Route::get('/slider_mitra/edit', [SliderMitraController::class, "edit"]);
 Route::put('/slider_mitra/simpan', [SliderMitraController::class, "update"]);
 Route::resource("/slider_mitra", SliderMitraController::class);
 
-// route kebijakan 
+// route kebijakan
 Route::get('/kebijakanuser/edit', [KebijakanUserController::class, "edit"]);
 Route::put('/kebijakanuser/simpan', [KebijakanUserController::class, "update"]);
 Route::resource("/kebijakanuser", KebijakanUserController::class);
@@ -83,3 +84,12 @@ Route::get('/pasangloker/edit', [PasanglokerController::class, "edit"]);
 Route::put('/pasangloker/simpan', [PasanglokerController::class, "update"]);
 Route::resource("/pasangloker", PasanglokerController::class);
 
+// Auth::routes();
+
+// Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/Layouts/landing', [HomeController::class, 'index']);
+Route::get("/logout", [LoginController::class, "logout"]);
+Route::post("/register", [LoginController::class, "post_register"]);
