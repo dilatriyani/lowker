@@ -1,5 +1,5 @@
 @extends('Layouts.home_nav')
-@include('Layouts.home.header')
+@include('Layouts.home.headerlanding')
 
 <section class="client_section layout_padding">
     <div class="container-fuild">

@@ -1,5 +1,5 @@
 @extends('Layouts.home_nav')
-@include('Layouts.home.header')
+@include('Layouts.home.headerlanding')
 <section class="subscribe_section">
     <div class="container-fuild">
         <div class="box">

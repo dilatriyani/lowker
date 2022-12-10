@@ -35,7 +35,8 @@ Route::get('/', function () {
     return view('Layouts.index');
 });
 
-
+Route::middleware(["auth"])->group(function()
+{
 Route::get('/form_iklan',[FormController::class, 'index']);
 Route::get('/tentang',[TentangController::class, 'index']);
 Route::get('/kebijakan',[KebijakanController::class, 'index']);
@@ -43,6 +44,7 @@ Route::get('/kontak',[KontakController::class, 'index']);
 Route::get('/loker',[LokerController::class, 'index']);
 Route::get('/detail',[LokerController::class, 'detail']);
 Route::get('/pasang_lowongan',[LokerController::class, 'lowongan']);
+});
 
 // Route::get('/redirect',[AdminController::class, 'redirect']);
 Route::get('/view_category',[CatelulusanController::class, 'view_category']);

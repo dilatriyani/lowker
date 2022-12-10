@@ -1,5 +1,5 @@
 @extends('Layouts.home_nav')
-@include('Layouts.home.header')
+@include('Layouts.home.headerlanding')
 <section class="why_section layout_padding">
     <div class="container">
         <div class="box heading_container heading_center mb-2">
