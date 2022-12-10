@@ -26,5 +26,7 @@ class RedirectIfAuthenticated
                 return redirect("/Layouts/landing");
             }
         }
+
+        return $next($request);
     }
 }
