@@ -30,7 +30,7 @@
                         <a class="nav-link" href="/pasang_lowongan">Pasang Lowongan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
+                        <a class="nav-link" href="{{ url('/login') }}">Login</a>
                     </li>
                 </ul>
             </div>

@@ -34,7 +34,7 @@ class LoginController extends Controller
             } else {
                 Auth::attempt($req);
                 if ($user->id_role == 1) {
-                    return redirect()->intended("/admin/home");
+                    return redirect()->intended("/dashboard");
                 } else if ($user->id_role == 2) {
                     return redirect("/Layouts/landing");
                 } else {
