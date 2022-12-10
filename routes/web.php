@@ -19,6 +19,7 @@ use App\Http\Controllers\Admin\DataPekerjaController;
 use App\Http\Controllers\admin\PasanglokerController;
 use App\Http\Controllers\admin\SliderMitraController;
 use App\Http\Controllers\Admin\KebijakanUserController;
+use App\Http\Controllers\Home\AppHomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,15 +36,23 @@ Route::get('/', function () {
     return view('Layouts.index');
 });
 
+Route::controller(AppHomeController::class)->group(function(){
+    Route::get('/pekerja/Layouts/home/form_iklan', 'index');
+    Route::get('/pekerja/Layouts/home/kebijakan', 'kebijakan');
+    Route::get('/pekerja/Layouts/home/kontak', 'kontak');
+    Route::get('/pekerja/Layouts/home/pasanglowongan', 'pasanglowongan');
+    Route::get('/pekerja/Layouts/home/tentang', 'tentang');
+});
+
 Route::middleware(["auth"])->group(function()
 {
-Route::get('/form_iklan',[FormController::class, 'index']);
-Route::get('/tentang',[TentangController::class, 'index']);
-Route::get('/kebijakan',[KebijakanController::class, 'index']);
-Route::get('/kontak',[KontakController::class, 'index']);
-Route::get('/loker',[LokerController::class, 'index']);
-Route::get('/detail',[LokerController::class, 'detail']);
-Route::get('/pasang_lowongan',[LokerController::class, 'lowongan']);
+    Route::get('/form_iklan',[FormController::class, 'index']);
+    Route::get('/tentang',[TentangController::class, 'index']);
+    Route::get('/kebijakan',[KebijakanController::class, 'index']);
+    Route::get('/kontak',[KontakController::class, 'index']);
+    Route::get('/loker',[LokerController::class, 'index']);
+    Route::get('/detail',[LokerController::class, 'detail']);
+    Route::get('/pasang_lowongan',[LokerController::class, 'lowongan']);
 });
 
 Route::get('/view_category',[CatelulusanController::class, 'view_category']);

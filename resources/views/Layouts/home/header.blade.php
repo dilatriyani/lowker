@@ -12,22 +12,22 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="form_iklan">Form Iklan</a>
+                        <a class="nav-link" href="{{ url('/pekerja/Layouts/home/form_iklan') }}">Form Iklan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kontak">Kontak</a>
+                        <a class="nav-link" href="{{ url('/pekerja/Layouts/home/kontak') }}">Kontak</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button"
                             aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Tentang kami <span
                                     class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="tentang">Tentang kami</a></li>
-                            <li><a href="kebijakan">Kebijakan</a></li>
+                            <li><a href="{{ url('/pekerja/Layouts/home/tentang') }}">Tentang kami</a></li>
+                            <li><a href="{{ url('/pekerja/Layouts/home/kebijakan') }}">Kebijakan</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/pasang_lowongan">Pasang Lowongan</a>
+                        <a class="nav-link" href="{{ url('/pekerja/Layouts/home/pasanglowongan') }}">Pasang Lowongan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/login') }}">Login</a>
