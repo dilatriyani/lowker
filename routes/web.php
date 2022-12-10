@@ -46,7 +46,6 @@ Route::get('/detail',[LokerController::class, 'detail']);
 Route::get('/pasang_lowongan',[LokerController::class, 'lowongan']);
 });
 
-// Route::get('/redirect',[AdminController::class, 'redirect']);
 Route::get('/view_category',[CatelulusanController::class, 'view_category']);
 Route::POST('/add_category',[CatelulusanController::class, 'add_category']);
 Route::get('/delete_category/{id}',[CatelulusanController::class, 'destroy']);
@@ -90,12 +89,6 @@ Route::group(["middleware" => ["admin"]], function() {
 
 Route::get('/admin/Home/slider_home/edit', [SliderHomeController::class, "edit"]);
 Route::put('/slider_home/simpan', [SliderHomeController::class, "update"]);
-
-// slider mitra
-
-// Auth::routes();
-
-// Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/Layouts/landing', [HomeController::class, 'index']);
 Route::get("/logout", [LoginController::class, "logout"]);
