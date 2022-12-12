@@ -16,9 +16,9 @@
               <i class="mdi mdi-menu-down d-none d-sm-block"></i>
             </div>
           </a>
-          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-              <div class="card">
-                <a href="/logout" class="preview-subject mb-1">Log out</a>
+          <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+              <div class="card" style="padding-left: 50px">
+                <a href="/logout" class="preview-subject mb-1 mt-2">Log out</a>
               </div>
             </a>
           </div>
