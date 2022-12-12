@@ -34,7 +34,6 @@
                             {{ Auth::user()->name }}
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><hr class="dropdown-divider"></li>
                           <li>
                             <a href="/logout" class="preview-subject mb-1">Log out</a>
                           </li>

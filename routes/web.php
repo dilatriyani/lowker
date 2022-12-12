@@ -35,7 +35,7 @@ Route::get('/', function () {
     return view('Layouts.index');
 });
 
-Route::middleware(["auth"])->group(function()
+Route::middleware(['auth'])->group(function()
 {
 Route::get('/form_iklan',[FormController::class, 'index']);
 Route::get('/tentang',[TentangController::class, 'index']);
