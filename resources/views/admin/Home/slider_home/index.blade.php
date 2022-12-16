@@ -56,7 +56,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($data_sliderhome as $data)
+                                            @foreach ($data as $data)
                                             <tr>
                                                 <td>{{ $data->judul }}</td>
                                                 <td>{{ $data->heading }}</td>

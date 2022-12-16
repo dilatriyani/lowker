@@ -19,6 +19,7 @@ use App\Http\Controllers\Admin\DataPekerjaController;
 use App\Http\Controllers\admin\PasanglokerController;
 use App\Http\Controllers\admin\SliderMitraController;
 use App\Http\Controllers\Admin\KebijakanUserController;
+use App\Http\Controllers\ShowData\HomeSliderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -100,3 +101,6 @@ Route::put('/slider_home/simpan', [SliderHomeController::class, "update"]);
 Route::get('/Layouts/landing', [HomeController::class, 'index']);
 Route::get("/logout", [LoginController::class, "logout"]);
 Route::post("/register", [LoginController::class, "post_register"]);
+
+// Route::get('/slider', [HomeSliderController::class, 'index']);
+// Route::get('/slider', [HomeSliderController::class, 'show']);
